@@ -139,6 +139,17 @@ section.jatkuu{padding-top:0;scroll-margin-top:94px}
 .liity-napit{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 8px}
 .liity-napit .nappi{padding:10px 22px}
 .liity .pieni{display:block;font-size:.9rem;color:#F2D9D6;margin-bottom:6px}
+.liity h3{color:#F2F1EC;margin-top:0}
+.liity .edut{margin:0 0 1em;padding-left:1.2em;display:grid;gap:8px;color:#F2D9D6}
+.liity .edut b{color:#F2F1EC}
+.liity .edut li::marker{color:var(--kulta-vaalea)}
+.liity details{border-top:1px solid rgba(242,217,214,.3);padding:4px 0}
+.liity details:first-of-type{margin-top:22px}
+.liity summary{cursor:pointer;font-weight:700;color:#F2F1EC;padding:12px 0;min-height:44px;box-sizing:border-box}
+.liity summary::marker{color:var(--kulta-vaalea)}
+.liity summary:focus-visible{outline:2px solid var(--kulta-vaalea);outline-offset:3px}
+.liity details ol{gap:8px;color:#F2D9D6;margin-bottom:14px}
+.liity details p{margin-top:0}
 
 footer{padding-block:36px;color:var(--himmea);font-size:.92rem;border-top:1px solid var(--viiva)}
 footer .kehys{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
@@ -189,7 +200,7 @@ footer .kehys{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px
       <div>
         <p class="ylaotsake">Kangasalan Voitto ry · frisbeegolfjaosto</p>
         <h1>Kangasalan kovin kiekkoa heittävä seura</h1>
-        <p>Pelataan, kisataan ja talkoillaan yhdessä Kangasalan metsäradoilla. Mukaan pääsee taitotasosta riippumatta.</p>
+        <p>Pelataan, kisataan ja talkoillaan yhdessä Kangasalan radoilla. Mukaan pääsee taitotasosta riippumatta.</p>
         <div class="napit">
           <a class="nappi taysi" href="#liity">Liity seuraan</a>
           <a class="nappi" href="#radat">Katso radat</a>
@@ -276,17 +287,60 @@ footer .kehys{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px
   <section id="liity">
     <div class="kehys">
       <div class="liity">
-        <div><h2>Liity KaVoon</h2><p>Jäsenenä pääset seuran kisoihin, junioritoimintaan ja mukaan porukkaan.</p><p>Seuravaatteet (hupparit, pikeet, t-paidat ja housut punaisena ja mustana) voi tilata <a href="https://aquaction.fi/collections/kavo-dg" target="_blank" rel="noopener">Aquactionin verkkokaupasta</a>, myös nimi- tai PDGA-painatuksella.</p></div>
-        <ol>
-          <li><b>Liity ja maksa jäsenmaksu Suomisportissa.</b> Vuoden 2027 jäsenmaksut:
-            <div class="liity-napit">
-              <a class="nappi taysi" href="https://seurat.suomisport.fi/invite/fa54889b-3e29-4da5-9538-b13de86d3685" target="_blank" rel="noopener">Aikuiset 20 €</a>
-              <a class="nappi" href="https://seurat.suomisport.fi/invite/910647be-76ac-49ee-b3eb-bc3ca3288335" target="_blank" rel="noopener">Juniorit 10 €</a>
-            </div>
-            <span class="pieni">Juniorihinta koskee 18-vuotiaita ja nuorempia.</span>
-          </li>
-          <li><b>Hanki SFL-lisenssi</b>, jos haluat pelata virallisia PDGA-kilpailuja. Useimpiin viikkokisoihin voi osallistua ilmankin.</li>
-        </ol>
+        <div>
+          <h2>Liity KaVoon</h2>
+          <p>KaVo DG on Kangasalan Voitto ry:n frisbeegolfjaosto ja Suomen Frisbeegolfliiton (SFL) jäsenseura. Jäseneksi ovat tervetulleita kaikki lajista kiinnostuneet, aloittelijoista kokeneisiin heittäjiin. Kilpaileminen ei ole edellytys.</p>
+          <ul class="edut">
+            <li><b>Heittoporukka.</b> Löydät seuraa kierroksille ja pääset mukaan paikalliseen frisbeegolfyhteisöön, joka elää seuran WhatsApp-ryhmässä.</li>
+            <li><b>Seuran kisat.</b> Kauden aikana viikkokisoja, Kangasalan mestaruuskilpailut ja seuramestaruuskilpailut.</li>
+            <li><b>Alennus Powergripistä.</b> Jäsenenä saat alennusta Powergripistä.</li>
+            <li><b>Väylä kilpailuihin.</b> Jäsenyys antaa oikeuden ostaa SFL:n kilpailulisenssin.</li>
+            <li><b>Tuki lähiradoille.</b> Jäsenmaksut ja talkoot pitävät Kangasalan radat hyvässä kunnossa.</li>
+          </ul>
+          <p>Seuravaatteet (hupparit, pikeet, t-paidat ja housut punaisena ja mustana) voi tilata <a href="https://aquaction.fi/collections/kavo-dg" target="_blank" rel="noopener">Aquactionin verkkokaupasta</a>, myös nimi- tai PDGA-painatuksella.</p>
+        </div>
+        <div>
+          <h3>Jäsenmaksu</h3>
+          <p>Jäsenyys on voimassa kalenterivuoden. Jäsenmaksuun sisältyy myös Suomen Frisbeegolfliiton jäsenyys. Maksujen suuruudesta päätetään vuosittain seuran syyskokouksessa.</p>
+          <div class="liity-napit">
+            <a class="nappi taysi" href="https://seurat.suomisport.fi/invite/fa54889b-3e29-4da5-9538-b13de86d3685" target="_blank" rel="noopener">Aikuiset 20 €</a>
+            <a class="nappi" href="https://seurat.suomisport.fi/invite/910647be-76ac-49ee-b3eb-bc3ca3288335" target="_blank" rel="noopener">Juniorit 10 €</a>
+          </div>
+          <span class="pieni">Juniorihinta koskee 18-vuotiaita ja nuorempia. Voit olla jäsenenä useammassa seurassa, mutta liiton jäsenyys kulkee vain edustamasi seuran kautta.</span>
+
+          <details>
+            <summary>Näin liityt Suomisportissa</summary>
+            <ol>
+              <li>Valitse yllä oikea liittymislinkki (aikuiset tai juniorit).</li>
+              <li>Kirjaudu Suomisportiin tai luo sinne tunnus.</li>
+              <li>Valitse, liitytkö itse vai huollettavasi puolesta, ja valitse jäsenyys.</li>
+              <li>Seuran edustaja hyväksyy hakemuksen. Maksua ei voi maksaa ennen hyväksyntää, joten maksun puuttuminen tässä vaiheessa on normaalia.</li>
+              <li>Hyväksynnän jälkeen maksa jäsenmaksu Suomisportin profiilissasi kohdassa <b>Maksut</b>.</li>
+            </ol>
+          </details>
+
+          <details>
+            <summary>Powergrip-alennuksen käyttöönotto</summary>
+            <ol>
+              <li>Rekisteröidy Powergripin asiakkaaksi.</li>
+              <li>Avaa asiakastietosi ja valitse muokkaus.</li>
+              <li>Valitse seuravalikosta Kangasalan Voitto ja tallenna.</li>
+              <li>Seuran edustaja vahvistaa jäsenyytesi, minkä jälkeen alennus on käytössäsi.</li>
+            </ol>
+          </details>
+
+          <details>
+            <summary>Kilpailulisenssi</summary>
+            <p>Lisenssiä tarvitaan SFL:n kilpailuissa ja suuremmissa kansainvälisissä kilpailuissa. Moniin seura- ja viikkokisoihin pääsee ilman lisenssiä. Lisenssin voivat ostaa SFL:n jäsenseurojen jäsenet, joten KaVon jäsenenä voit ostaa sen. Lisenssiin sisältyy PDGA-jäsenyys, ja lisenssikilpailuissa on liiton vastuuvakuutus. Rating-luokitus edellyttää lisenssiä tai erillistä PDGA-jäsenyyttä.</p>
+            <ol>
+              <li>Valitse Suomisportin profiilissasi <b>Ostamaan</b> ja lisenssin osto.</li>
+              <li>Valitse, ostatko lisenssin itsellesi vai lapselle.</li>
+              <li>Valitse <b>Frisbeegolf – Suomen frisbeegolfliitto ry</b>, haluamasi lisenssi ja edustusseuraksi Kangasalan Voitto.</li>
+              <li>Voit halutessasi lisätä urheiluvakuutuksen. Se ei ole pakollinen, ja sen voi ostaa myöhemminkin.</li>
+            </ol>
+            <p>Ajantasaiset hinnat ja ehdot: <a href="https://www.frisbeegolfliitto.fi/" target="_blank" rel="noopener">frisbeegolfliitto.fi</a>.</p>
+          </details>
+        </div>
       </div>
     </div>
   </section>
